@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js</title>
+    <script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>hello vue.js</p>
+        <p v-if="yes">yes</p>
+        <p v-if="no">no</p>
+        <p v-if="age >=19">Age:{{ age}}</p>
+        <p>Name:{{ name}}</p>
+    </div>
+</body>
+<script>
+    var vm=new Vue({
+        el:'#app',
+        data:{
+            yes:false,
+            no:true,
+            age:20,
+            name:'简若宁'
+        }
+    });
+</script>
+</html>
